@@ -72,8 +72,15 @@ class _SelectableTextSelectionGestureDetectorBuilder extends TextSelectionGestur
     }
   }
 
+  // 取消双击选中
   @override
   void onDoubleTapDown(TapDragDownDetails details) {
+
+  }
+
+  // 取消三击中选中
+  @override
+  void onTripleTapDown(TapDragDownDetails details) {
 
   }
 
