@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 import 'selectable_region.dart';
+import 'text_selection_toolbar.dart';
 
 
 /// The default context menu for text selection for the current platform.
@@ -289,7 +290,7 @@ class CusAdaptiveTextSelectionToolbar extends StatelessWidget {
 
     switch (Theme.of(context).platform) {
       case TargetPlatform.iOS:
-        return CupertinoTextSelectionToolbar(
+        return CusCupertinoTextSelectionToolbar(
           anchorAbove: anchors.primaryAnchor,
           anchorBelow: anchors.secondaryAnchor == null ? anchors.primaryAnchor : anchors.secondaryAnchor!,
           children: resultChildren,
