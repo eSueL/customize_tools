@@ -48,7 +48,9 @@ class CusSelectionArea extends StatefulWidget {
     this.onSelectionChanged,
     this.gestureCallback,
     required this.child,
+    this.canSelect,
   });
+  final bool? canSelect;
 
   /// {@macro flutter.widgets.magnifier.TextMagnifierConfiguration.intro}
   ///
