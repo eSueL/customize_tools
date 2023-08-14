@@ -14,7 +14,7 @@ import 'package:flutter/widgets.dart';
 
 // Values extracted from https://developer.apple.com/design/resources/.
 // The height of the toolbar, including the arrow.
-const double _kToolbarHeight = 44.0;
+const double _kToolbarHeight = 64.0;
 // Vertical distance between the tip of the arrow and the line of text the arrow
 // is pointing to. The value used here is eyeballed.
 const double _kToolbarContentDistance = 8.0;
@@ -127,7 +127,7 @@ class CusCupertinoTextSelectionToolbar extends StatelessWidget {
   ///  * [SpellCheckSuggestionsToolbar], which uses this same value for its
   ///    padding from the edges of the viewport.
   ///  * [TextSelectionToolbar], which uses this same value as well.
-  static const double kToolbarScreenPadding = 8.0;
+  static const double kToolbarScreenPadding = 14.0;
 
   // Add the visual vertical line spacer between children buttons.
   static List<Widget> _addChildrenSpacers(List<Widget> children) {
@@ -151,7 +151,7 @@ class CusCupertinoTextSelectionToolbar extends StatelessWidget {
       child: DecoratedBox(
         decoration: const BoxDecoration(
           // color: _kToolbarDividerColor.resolveFrom(context),
-          color: Colors.white
+          color: Color(0xFF574F45)
         ),
         child: child,
       ),

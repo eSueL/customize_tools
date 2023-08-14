@@ -107,7 +107,6 @@ class CusAdaptiveTextSelectionToolbar extends StatelessWidget {
          onCopy: onCopy,
          onCut: onCut,
          onPaste: onPaste,
-         onSelectAll: onSelectAll,
        );
 
   /// Create an instance of [AdaptiveTextSelectionToolbar] with the default
